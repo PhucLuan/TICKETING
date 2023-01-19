@@ -20,4 +20,4 @@ spec:
             service:
               name: auth-srv
               port:
-                number: 80
+                number: 3000
