@@ -5,7 +5,7 @@ const app = express();
 app.use(json());
 
 app.get("/api/users/currentuser", (req, res) => {
-  res.send("Hi Luan ahihihi!!!");
+  res.send("Hi Luan ahhii!!!");
 });
 
 app.listen(3000, () => {
