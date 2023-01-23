@@ -16,3 +16,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+    - image: luannguyen6052000/ticketing_client
+      context: ../app/client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '**/*.js'
+            dest: .
