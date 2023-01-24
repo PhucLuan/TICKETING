@@ -1,6 +1,10 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
+
+// module.exports = nextConfig
+/** @type {import('next').NextConfig} */
 module.exports = {
-    webpackDevMiddleware: (config) => {
-      config.watchOptions.poll = 300;
-      return config;
-    },
-  };
+  output: 'standalone',
+}
