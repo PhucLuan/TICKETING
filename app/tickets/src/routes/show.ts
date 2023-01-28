@@ -4,8 +4,8 @@ import { Ticket } from '../models/Ticket';
 
 const router = express.Router();
 
-router.get('/api/tickets/:id', (req: Request, res: Response) => {
-  const ticket = Ticket.findById(req.params.id);
+router.get('/api/tickets/:id', async (req: Request, res: Response) => {
+  const ticket = await Ticket.findById(req.params.id);
 
   if (!ticket) {
     throw new NotFoundError();
